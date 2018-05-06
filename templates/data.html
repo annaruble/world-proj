@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+		{% for item in contCountries %}
+			<p>{{item}}</p>
+		{% endfor %}
+
+<table>
+	<tr>
+		<td>{{cont}}</td>
+	</tr>
+	<tr>
+		{% for item in contCountries %}
+			<td>{{item}}</td>
+		{% endfor %}
+	</tr>
+	</table>
+{% endblock %}
