@@ -10,7 +10,7 @@
 		<form action='/procForm'>
 			<select name="cont">
 				{% for item in res %}
-					<option name="cont" value={{item["continent"]}}>{{item["continent"]}}</option>
+					<option name="cont" value="{{item['continent']}}"">{{item["continent"]}}</option>
 				{% endfor %}
 			</select>
 			<input type="submit" name="submit">
