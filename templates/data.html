@@ -2,18 +2,37 @@
 
 {% block content %}
 
-		{% for item in contCountries %}
+<!-- File to display countries and languages dropdown for specified continent -->
+
+<!-- 		<form action='/procCountry'>
+			<select name="county">
+				{% for item in countryList %}
+					<option name="cont" value="{{item['continent']}}"">{{item["continent"]}}</option>
+				{% endfor %}
+			</select>
+			<input type="submit" name="submit"> -->
+
+
+<!-- 		{% for item in contCountries %}
 			<p>{{item}}</p>
-		{% endfor %}
+		{% endfor %} -->
 
 <table>
 	<tr>
 		<td>{{cont}}</td>
 	</tr>
+
+	{% for item in contCountries %}
 	<tr>
-		{% for item in contCountries %}
-			<td>{{item}}</td>
-		{% endfor %}
+		<td>{{item[0]}}</td>
+		<td>{{item[1]}}</td>
+		<td>{{item[2]}}</td>
+		<td>{{item[3]}}</td>
+		<td>{{item[4]}}</td>
+		<td>{{item[5]}}</td>
+		<td>{{item[6]}}</td>		
 	</tr>
-	</table>
+	{% endfor %}
+</table>
+
 {% endblock %}

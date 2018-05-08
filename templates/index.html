@@ -5,9 +5,9 @@
 	</head>
 
 	<body>
-		<h1>World DB</h1>
+		<h1>World Database Project</h1>
 {% block content %}
-		<form action='/procForm'>
+		<form action='/procContForm'>
 			<select name="cont">
 				{% for item in res %}
 					<option name="cont" value="{{item['continent']}}"">{{item["continent"]}}</option>
